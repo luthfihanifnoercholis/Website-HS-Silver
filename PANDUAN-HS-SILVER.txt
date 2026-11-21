@@ -1,0 +1,83 @@
+WEBSITE HS SILVER JEWELRY & CRAFTS - KOTAGEDE, YOGYAKARTA
+Tema putih & maroon (mengikuti logo). Berbasis template Instant (BootstrapMade, versi gratis).
+
+CARA MEMBUKA
+- Buka index.html di browser (butuh internet untuk font dan peta).
+- Untuk online: upload seluruh isi folder ke hosting (cPanel / Netlify / GitHub Pages / Vercel).
+
+SUDAH TERPASANG
+- Logo HS SILVER (assets/img/logo.png, juga dipakai sebagai favicon).
+- Foto gerbang HS SILVER Kotagede (assets/img/gerbang-hs-silver.jpg) di bagian utama.
+- "Sejak 1953" diambil dari logo Anda.
+
+WAJIB ANDA GANTI (masih contoh)
+1. WhatsApp sudah terhubung ke 0812-8608-0823 (6281286080823). Setiap tombol chat membuka
+   WhatsApp dengan TEMPLATE PESAN otomatis (produk, ukuran, jumlah, nama, alamat).
+   Jika nomor berubah: cari "6281286080823" dan "0812-8608-0823" di index.html,
+   dan assets/js/hs-silver.js. Format: 62 + nomor tanpa 0 depan.
+2. Email "hello@hssilver.example", Instagram "https://instagram.com/hssilver",
+   Facebook & TikTok (masih "#").
+3. Alamat lengkap (nama jalan & nomor) di bagian Kontak.
+4. Jam layanan (contoh: Senin-Minggu 09.00-17.00).
+5. Peta: sudah memakai peta Google "HS SILVER" yang Anda berikan (iframe di bagian Kontak).
+6. Teks produk dan FAQ: sesuaikan dengan kondisi sebenarnya.
+
+FOTO PRODUK
+- Tidak ada lagi foto orang/model. Semua gambar produk di Koleksi dan Galeri adalah ILUSTRASI
+  perak buatan (bukan foto asli), ada di assets/img/produk/ :
+  10 gambar produk (cincin-filigree-bunga.png, cincin-bakar-etnik.png, anting-giwang.png,
+  anting-hoop.png, gelang-filigree-daun.png, gelang-tali-charm.png, kalung-rantai.png,
+  liontin-filigree-bunga.png, sirkam-filigree.png, tusuk-konde-bunga.png)
+  dan 5 gambar kategori (kategori-cincin/anting/gelang/kalung/rambut.png) untuk tab Koleksi.
+- Untuk memakai FOTO ASLI produk: timpa file dengan nama yang sama (disarankan rasio 3:2,
+  mis. 1200x800 px, format PNG/JPG; kalau JPG, ganti ekstensi di index.html).
+- Galeri Karya berisi 10 produk (2 per kategori) lengkap dengan kisaran harga.
+- Bagian "Layanan" dan halaman service-details.html sudah dihapus. Tombol "Pesanan Custom" di
+  footer langsung membuka WhatsApp dengan template pesan custom.
+
+HARGA
+- Bagian "Panduan Harga" memakai "Tanya Harga". Ganti teks pada
+  <span class="amount ask">Tanya Harga</span> bila ingin menampilkan angka.
+
+KONTAK & LOKASI
+- Bagian ini menampilkan info kontak (kiri) dan peta Google (kanan). Tombol chat membuka WhatsApp dengan template pesan.
+
+WARNA
+- Diatur di assets/css/main.css (variabel --accent-color dll.) dan assets/css/hs-silver.css.
+
+LISENSI
+- Tautan kredit "Template oleh BootstrapMade" di footer harus tetap ada
+  (https://bootstrapmade.com/license/).
+
+
+FOTO REFERENSI DARI INTERNET (v12)
+- 4 gambar kini memakai foto bebas lisensi lewat LINK (hotlink), bukan file lokal:
+  * Cincin Filigree Motif Bunga  -> https://www.pexels.com/photo/silver-colored-ring-2899839/
+  * Cincin Perak Bakar Etnik     -> https://www.pexels.com/photo/close-up-of-silver-rings-with-gems-15684127/
+  * Tab Koleksi: Cincin          -> https://www.pexels.com/photo/silver-colored-ring-in-box-298852/
+  * Anting Giwang                -> https://unsplash.com/photos/3kMQKVsfd80 (Shubhi Verma)
+- Gambar lain masih ilustrasi lokal. Bila link gagal dimuat, gambar otomatis kembali ke ilustrasi lokal.
+- Ini BUKAN produk HS SILVER. Untuk jangka panjang, ganti dengan foto produk asli.
+- Pexels/Unsplash tidak mewajibkan atribusi, tetapi disarankan mencantumkan kredit fotografer.
+
+
+FOTO REFERENSI DARI INTERNET (v13)
+- Foto asli (bukan ilustrasi) kini dipakai lewat LINK (hotlink) untuk: cincin x3, anting giwang, anting hoop,
+  gelang x2, kalung rantai, liontin, dan tab Koleksi Anting/Gelang/Kalung.
+  Sumber: Unsplash (Mong Bui, Stephanie Harvey, Coline Beulin, dll.) & Pexels, lisensi bebas pakai.
+- Masih ilustrasi lokal (belum ketemu foto bebas lisensi yang cocok): Sirkam, Tusuk Konde, tab Aksesori Rambut.
+- Anting Hoop: foto referensi mungkin bukan hoop persis - cek tampilannya di browser.
+- Semua foto BUKAN produk HS SILVER. Untuk jangka panjang, ganti dengan foto produk asli Anda.
+- Bila link gagal dimuat, gambar otomatis kembali ke ilustrasi lokal.
+
+UPDATE (v14)
+- Sirkam, Tusuk Konde, dan tab Koleksi Aksesori Rambut kini juga memakai foto referensi internet (Unsplash,
+  hotlink; fallback ke ilustrasi lokal bila gagal dimuat). Foto referensi aksesori rambut berwarna emas/umum,
+  bukan perak Kotagede; ganti dengan foto produk asli bila sudah ada.
+- Struktur Organisasi diganti menjadi 8 tingkat sesuai struktur HS Silver 800 - 925.
+
+UPDATE (v15)
+- Semua gambar produk (10 di Galeri + 5 di tab Koleksi) kini memakai FOTO ASLI dari Pexels (lisensi gratis),
+  dimuat lewat link. Ilustrasi buatan di assets/img/produk/ hanya muncul bila link gagal dimuat (tidak ada internet).
+- Foto BUKAN produk HS SILVER; ganti dengan foto produk asli bila sudah ada.
+- Nomor pada Struktur Organisasi dihapus.

@@ -1,0 +1,132 @@
+/* HS SILVER - tema putih & maroon (berdasarkan logo) */
+:root { --maroon: #6f031e; --maroon-dark: #4a0214; --gold: #e9b949; --blush: #faf3f4; }
+
+.header .logo img { max-height: 46px; width: auto; margin-right: 10px; }
+.header .logo h1 { white-space: nowrap; font-size: 26px; letter-spacing: .06em; }
+.btn-getstarted { font-weight: 600; }
+.sitename { letter-spacing: .06em; }
+
+/* Foto */
+.hero .hero-image-showcase .image-wrapper img.hero-photo { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 38%; }
+.about .image-wrapper { text-align: center; }
+.about .image-wrapper img.about-logo { max-width: 420px; width: 100%; aspect-ratio: 1/1; border-radius: 50%; box-shadow: 0 20px 50px rgba(111,3,30,.25); }
+.features .intro-image img, .services .hero-visual img, .call-to-action .content-right img, .features-tabs .main-image img, .service-hero img {
+  width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: var(--blush); }
+
+/* Harga */
+.pricing .plan-pricing .amount.ask { font-size: 28px; }
+.price-note, .text-muted-silver { color: color-mix(in srgb, var(--default-color), transparent 35%); font-size: 14px; }
+
+/* Galeri */
+.gallery-card { display: block; position: relative; border-radius: 14px; overflow: hidden; background: #fff; border: 1px solid rgba(111,3,30,.12); box-shadow: 0 8px 24px rgba(111,3,30,.08); }
+.gallery-card img { width: 100%; aspect-ratio: 3/2; object-fit: cover; transition: transform .5s; }
+.gallery-card:hover img { transform: scale(1.05); }
+.gallery-caption { padding: 14px 18px 16px; }
+.gallery-caption h5 { margin: 0 0 2px; font-size: 17px; color: var(--maroon); }
+.gallery-caption span { font-size: 13px; color: color-mix(in srgb, var(--default-color), transparent 30%); }
+
+/* Peta & formulir */
+.map-wrap { background: var(--blush); border-radius: 14px; min-height: 380px; overflow: hidden; border: 1px solid rgba(111,3,30,.12); }
+.error-message-wa { background: #df1529; color: #fff; padding: 12px 15px; border-radius: 8px; font-weight: 600; }
+
+/* Footer maroon */
+.footer, .footer.light-background { --background-color: var(--maroon-dark); --default-color: #f3e3e7; --heading-color: #ffffff; --accent-color: var(--gold); background-color: var(--maroon-dark); color: #f3e3e7; }
+.footer .footer-top { background-color: var(--maroon-dark); border-top: 3px solid var(--gold); }
+.footer .sitename, .footer h4, .footer strong { color: #fff; }
+.footer a { color: #f3e3e7; }
+.footer a:hover { color: var(--gold); }
+.footer .footer-links ul a { color: #e8cdd3; }
+.footer .copyright { border-top: 1px solid rgba(255,255,255,.15); background: #3a010f; }
+.footer .social-links a { background: rgba(255,255,255,.1); color: #fff; }
+.footer .social-links a:hover { background: var(--gold); color: var(--maroon-dark); }
+.footer .text-muted-silver { color: #e8cdd3; }
+.footer .credits, .footer .credits a { color: #d9b9c1; }
+
+
+@media (max-width: 575px) {
+  .header .logo img { max-height: 36px; margin-right: 6px; }
+  .header .logo h1 { font-size: 19px; letter-spacing: .03em; }
+  .btn-getstarted { padding: 6px 12px; font-size: 13px; margin: 0 8px 0 auto; }
+}
+
+.about .image-wrapper, .about .image-wrapper img.about-logo { background: transparent; }
+.about .image-wrapper { box-shadow: none; border: 0; padding: 0; }
+
+/* Kartu peta di bagian Kontak & Lokasi */
+.map-card { height: 100%; display: flex; flex-direction: column; background: #fff; border: 1px solid rgba(111,3,30,.12); border-radius: 16px; box-shadow: 0 8px 28px rgba(111,3,30,.08); overflow: hidden; }
+.map-title { padding: 16px 22px; font-weight: 700; color: var(--maroon); font-family: var(--heading-font); border-bottom: 1px solid rgba(111,3,30,.1); }
+.map-title i { margin-right: 6px; }
+.map-card .map-wrap { flex: 1 1 auto; min-height: 420px; border: 0; border-radius: 0; }
+.map-card .map-wrap iframe { width: 100%; height: 100%; min-height: 420px; border: 0; display: block; }
+.map-link { display: block; text-align: center; padding: 14px; font-weight: 600; background: var(--blush); color: var(--maroon); }
+.map-link:hover { background: var(--maroon); color: #fff; }
+
+/* Tanpa tombol Pesan di header: logo kiri, menu kanan */
+.header .logo { margin-right: auto; }
+
+/* Logo & nama: tidak berubah saat diklik */
+.header .logo, .footer .logo { cursor: pointer; }
+
+/* Kartu harga: bisa diklik, kartu terpilih tampil "timbul" seperti kartu tengah */
+.pricing .pricing-card { cursor: pointer; outline: none; }
+.pricing .pricing-card.active { border: 2px solid var(--accent-color); transform: translateY(-10px); box-shadow: 0 18px 38px rgba(111,3,30,.18); }
+.pricing .pricing-card.active .plan-cta .btn-plan { background-color: var(--accent-color); color: var(--contrast-color); }
+.pricing .pricing-card.active .plan-cta .btn-plan:hover { background-color: var(--maroon-dark); }
+.pricing .pricing-card:focus-visible { box-shadow: 0 0 0 3px rgba(111,3,30,.35); }
+
+/* Kontak & Lokasi: tinggi peta mengikuti kolom kontak, tidak berlebih */
+.contact .contact-info-section .contact-info-grid { margin-bottom: 24px; gap: 18px; }
+.contact .row > [class*="col-lg-6"] { margin-bottom: 0 !important; }
+.map-card .map-wrap, .map-card .map-wrap iframe { min-height: 340px; }
+
+/* Struktur Organisasi */
+.struktur .org-chart { max-width: 760px; margin: 0 auto; text-align: center; }
+.struktur .org-box { display: inline-block; background: #fff; border: 2px solid var(--maroon); color: var(--maroon-dark); font-weight: 700; font-size: 14px; letter-spacing: .3px; padding: 10px 18px; border-radius: 6px; box-shadow: 0 4px 12px rgba(111,3,30,.08); }
+.struktur .org-owner { background: var(--maroon); color: #fff; padding: 12px 28px; }
+.struktur .org-top { position: relative; padding-bottom: 28px; }
+.struktur .org-top::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 2px; height: 28px; background: var(--maroon); }
+.struktur .org-branches { display: flex; justify-content: space-between; gap: 24px; position: relative; padding-top: 28px; }
+.struktur .org-branches::before { content: ""; position: absolute; top: 0; left: calc(25% - 6px); right: calc(25% - 6px); height: 2px; background: var(--maroon); }
+.struktur .org-branch { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; }
+.struktur .org-branch::before { content: ""; position: absolute; top: -28px; left: 50%; width: 2px; height: 28px; background: var(--maroon); }
+.struktur .org-sub { margin-top: 8px; font-size: 13px; color: #6b5459; }
+.struktur .org-box-join { margin-top: 6px; }
+.struktur .org-crafters { position: relative; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding-top: 28px; margin-top: 0; width: 100%; }
+.struktur .org-crafters::before { content: ""; position: absolute; top: 0; left: 50%; width: 2px; height: 28px; background: var(--maroon); }
+.struktur .org-small { font-size: 13px; font-weight: 600; padding: 8px 12px; }
+@media (max-width: 767px) {
+  .struktur .org-branches { flex-direction: column; align-items: center; gap: 32px; padding-top: 0; }
+  .struktur .org-branches::before, .struktur .org-branch::before { display: none; }
+  .struktur .org-top { padding-bottom: 24px; }
+  .struktur .org-top::after { display: none; }
+}
+
+/* Logo header tidak bisa diklik */
+.header .logo-static { pointer-events: none; cursor: default; user-select: none; }
+
+/* Daftar produk koleksi (nama + kisaran harga) */
+.features-tabs .content-wrapper .feature-grid.feature-grid-list { grid-template-columns: 1fr; }
+.features-tabs .content-wrapper .feature-grid-list .feature-item { align-items: flex-start; }
+.features-tabs .content-wrapper .feature-grid-list .feature-item i { margin-top: 3px; }
+.features-tabs .content-wrapper .feature-grid-list .koleksi-price { color: var(--accent-color); white-space: nowrap; }
+@media (min-width: 993px) { .features-tabs .nav-tabs { flex-wrap: nowrap; } .features-tabs .nav-link { padding-left: 14px; padding-right: 14px; } }
+
+/* Struktur organisasi HS Silver (versi 8 tingkat) */
+.struktur .org-tree { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+.struktur .org-node { position: relative; display: flex; align-items: center; justify-content: center; }
+.struktur .org-tree .org-box { max-width: 520px; line-height: 1.35; }
+.struktur .org-no { position: absolute; top: -11px; left: -11px; z-index: 2; width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: var(--maroon-dark); font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,.2); }
+.struktur .org-stem { width: 2px; flex: none; height: 26px; background: var(--maroon); }
+.struktur .org-stem-sm { height: 22px; }
+.struktur .org-sups { position: relative; display: flex; justify-content: center; gap: 18px; width: 100%; padding-top: 26px; }
+.struktur .org-sup { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; }
+.struktur .org-sup::before { content: ""; position: absolute; top: -26px; left: calc(50% - 1px); width: 2px; height: 26px; background: var(--maroon); }
+.struktur .org-sup::after { content: ""; position: absolute; top: -26px; left: -9px; right: -9px; height: 2px; background: var(--maroon); }
+.struktur .org-sup:first-child::after { left: 50%; }
+.struktur .org-sup:last-child::after { right: 50%; }
+.struktur .org-sup .org-box { width: 100%; max-width: 210px; }
+@media (max-width: 767px) {
+  .struktur .org-sups { flex-direction: column; align-items: center; gap: 22px; padding-top: 0; }
+  .struktur .org-sup::before, .struktur .org-sup::after { display: none; }
+  .struktur .org-sup .org-box { max-width: 320px; }
+}
